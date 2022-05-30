@@ -1,0 +1,35 @@
+.outer-book{
+    background-color: bisque;
+    width: 97%;
+    margin: auto;
+}
+
+.national-flag{
+    border-radius: 100px;
+    width: 50px;
+    position: fixed;
+    top: 30px;
+    border: coral 3px solid;
+}
+
+.Korean-btn{
+    right: 150px;
+}
+
+.English-btn{
+    right: 50px;
+}
+
+nav{
+    float: right;
+    background-color: coral;
+}
+
+nav::after{
+    clear: both;
+}
+
+
+object{
+    width:20px;
+}

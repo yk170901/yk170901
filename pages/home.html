@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ava Kim - HOME</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="body" onload="getHeight();">
+    <div class="btn lang-btn">
+        <img src="img/korean_flag.png" class="national-flag Korean-btn"/>
+        <img src="img/american_flag.png" class="national-flag English-btn"/>
+    </div>
+    
+    <nav>
+        <div class="nav nav-home"><object type="image/svg+xml" data="img/home.svg"></object>HOME</div>
+        <div class="nav nav-portfolio"><object type="image/svg+xml" data="img/portfolio.svg"></object>PORTFOLIO</div>
+        <div class="nav nav-learning"><object type="image/svg+xml" data="img/study.svg"></object>STUDY</div>
+        <div class="nav nav-memo"><object type="image/svg+xml" data="img/note.svg"></object>NOTE</div>
+    </nav>
+
+    <div class="outer-book">
+        
+        <aside>
+            <div>
+                <img src="img/seth.jpg" style="width:150px; border-radius: 100px;"/>
+            </div>
+            <div>
+                <h2>Ava Kim</h2>
+            </div>
+            <div>
+                I'm a back-end developer in Suwon. Yada Yada Yada.
+            </div>
+            <div>
+                <a href="mailto:yk170901@gmail.com"><object type="image/svg+xml" data="img/gmail.svg"></object></a>
+                <a href="https://github.com/yk170901"><object type="image/svg+xml" data="img/github.svg"></object></a>
+                <a href="" onclick="alert('sorry. I don&#8217;t have an instagram account yet')"><object type="image/svg+xml" data="img/instagram.svg"></object></a>
+            </div>
+        </aside>
+
+        <section>
+            <article class="left-hand">
+                <h1>I'm a --</h1>
+                <span>Some interesting facts about me...</span>
+
+                <section>
+                    <h3>Education</h3>
+                </section>
+
+                <section>
+                    <h3>Experience</h3>
+                </section>
+            </article>
+
+            <article class="right-hand">
+                <div class="post-it">
+                    <h3>About Me</h3>
+                    <span>Some interesting listings about me</span>
+                </div>
+
+               <section>
+                   <h3>Major Skills</h3>
+               </section>
+
+               <section>
+                   <h3>I've experienced...</h3>
+               </section>
+            </article>
+        </section>
+    </div>
+</body>
+<script>
+    function getHeight(){
+        document.querySelector("div.outer-book").style.height = window.innerHeight-(window.innerHeight*0.07)+"px";
+    }
+</script>
+</html>
