@@ -1,35 +1,208 @@
-.outer-book{
-    background-color: bisque;
-    width: 97%;
-    margin: auto;
+/* 스크롤바 없애기 */
+body::-webkit-scrollbar{
+    display:none;
 }
 
+/* 언어 번환 버튼 */
 .national-flag{
     border-radius: 100px;
     width: 50px;
     position: fixed;
     top: 30px;
     border: coral 3px solid;
+    z-index: 2;
+}
+.Korean-btn{ right: 150px; }
+.English-btn{ right: 50px; }
+
+/* 개인 정보란 */
+.my-info{
+    background: linear-gradient(to right, rgb(157, 62, 15), rgb(126, 39, 17));
+    width: 17%;
+    display: inline-block;
+    height: 100%;
+    border-right: dashed 2px gold;
+    border-radius: 30px 0 0 30px;;
 }
 
-.Korean-btn{
-    right: 150px;
+.profile-pic{
+    text-align: center;
+    padding: 10% 0 5% 0;
 }
 
-.English-btn{
-    right: 50px;
+.profile-pic img{
+    border: double 5px rgb(225, 164, 85);
+    width: 180px; 
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 15px rgb(190, 103, 72);
 }
 
-nav{
-    float: right;
+.profile-name{
+    text-align: center;
+    background: linear-gradient(to right, rgb(245, 243, 241), rgb(131, 110, 108));
+    border: ridge 2px rgb(209, 200, 198);
+    border-style:  none ridge ridge groove;
+    border-radius: 2px 5px 5px 0;
+    position: relative;
+    left: -10px;
+    margin: 0;
+    padding: 3px;
+    box-shadow: 5px 3px 2px rgb(68, 1, 1);
+    color: white;
+    -webkit-text-stroke: 1px rgb(26, 0, 0);
+}
+
+.profile-second-name{
+    text-align: center;
+    background: linear-gradient(to right, rgb(96, 60, 53), rgb(44, 5, 1));
+    border: ridge 2px rgb(81, 39, 36);
+    border-style:  none ridge ridge groove;
+    border-radius: 2px 5px 5px 0;
+    position: relative;
+    left: -10px;
+    margin: 7px 0;
+    padding: 3px;
+    box-shadow: 3px 3px 2px rgb(68, 1, 1);
+    color: snow;
+    -webkit-text-stroke: 0.7px rgb(155, 20, 2);
+    width: 40%;
+    font-size: 1.3em;
+}
+
+.profile-desc{
+    text-align: center;
+    padding: 25px 15px;
+    position: relative;
+    left: 7%;
+    background: linear-gradient(to bottom right, palegoldenrod 80%, rgb(229, 200, 132));
+    box-shadow: 5px 5px 10px rgb(68, 1, 1);
+    width: 75%;
+    margin: 40px 0;
+    border-radius: 2% 0 20% / 45% 0;
+}
+
+.profile-email{
+    text-align: center;
+    padding: 7px 10px;
+    position: relative;
+    left: 10%;
+    background: linear-gradient(to bottom, rgb(245, 243, 241), rgb(133, 117, 116));
+    box-shadow: 2px 5px 10px rgb(68, 1, 1);
+    width: 75%;
+    margin: 50px 0 30px 0;
+    border-radius: 50px;
+    border: rgb(221, 212, 208) groove 3px;
+    border-style: ridge groove groove ridge;
+}
+
+.profile-phone-number{
+    text-align: center;
+    padding: 7px;
+    position: relative;
+    left: 33%;
+    background: linear-gradient(to bottom, rgb(245, 243, 241), rgb(133, 117, 116));
+    box-shadow: 2px 5px 10px rgb(68, 1, 1);
+    width: 55%;
+    border-radius: 50px;
+    border: rgb(221, 212, 208) groove 3px;
+    border-style: ridge groove groove ridge;
+}
+
+.profile-svg{
+    position: fixed;
+    left: 3%;
+    bottom: 5%;
+}
+
+.contact-svg{
+    width: 40px;
+    margin: 0 3px;
+}
+
+.github-svg{
+    background-color: aliceblue;
+    border-radius: 100px;
+}
+
+.instagram-svg{
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+
+/* 카테고리 포스트잇 */
+.category{
+    position: relative;
+    top:-39px;
+    margin-left: 5px;
+}
+
+.nav{
     background-color: coral;
+    width: 90px;
+    z-index: 2;
+    display: inline-block;
+    padding: 10px 10px 5px 15px;
+    border-radius: 30px 10px 0 0;
+    margin-left: 5px;
 }
 
-nav::after{
-    clear: both;
-}
-
-
-object{
+.nav-svg{
+    margin: 0 5px 0 5px;
     width:20px;
+}
+.nav-portfolio{ width: 125px; }
+
+.category-name{
+    position: relative;
+    top: -3px;
+}
+
+/* 겉표지 */
+.outer-book{
+    background-color: rgb(126, 39, 17);
+    width: 97%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 30px;
+}
+
+/* 속표지 */
+.inner-book{
+    background: linear-gradient(to bottom, rgb(216, 219, 221), rgb(145, 151, 153), rgb(196, 200, 202));
+    width: 77%;
+    display: inline-block;
+    height: 88%;
+    position: absolute;
+    margin: 1.5%;
+    border-radius: 5px;
+}
+
+/* 찐 페이지 */
+.inner-page{
+    background-color: rgb(196, 196, 200);
+    width: 99%;
+    margin: auto;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* 페이지 내 각 columns */
+.col{
+    display: inline-block;
+    width: 45.7%;
+    height: 100%;
+    position: relative;
+    top: -40px;
+    padding: 0 2%;
+}
+.left-hand{
+    top: -39px;
+    background: linear-gradient(to right, snow, rgb(196, 196, 200));
+    border-radius: 5px 0 0 5px;
+}
+.right-hand{
+    background: linear-gradient(to left, snow, rgb(196, 196, 200));
+    border-left: 2px rgb(143, 146, 147) solid;
+    border-radius: 0 5px 5px 0;
 }
