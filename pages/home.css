@@ -184,7 +184,7 @@ body::-webkit-scrollbar{
 }
 
 .nav-portfolio:hover{
-    background: linear-gradient(to bottom right, rgb(252, 114, 40), rgb(255, 64, 21));
+    background: linear-gradient(to bottom right, rgb(254, 119, 47), rgb(255, 64, 21));
 }
 
 .nav-study{
