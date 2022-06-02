@@ -78,7 +78,7 @@ body::-webkit-scrollbar{
     background: linear-gradient(to bottom right, palegoldenrod 80%, rgb(229, 200, 132));
     box-shadow: 5px 5px 10px rgb(68, 1, 1);
     width: 75%;
-    margin: 40px 0;
+    margin: 4zz0px 0;
     border-radius: 2% 0 20% / 45% 0;
 }
 
@@ -138,7 +138,6 @@ body::-webkit-scrollbar{
 }
 
 .nav{
-    background-color: coral;
     width: 90px;
     z-index: 2;
     display: inline-block;
@@ -151,7 +150,44 @@ body::-webkit-scrollbar{
     margin: 0 5px 0 5px;
     width:20px;
 }
-.nav-portfolio{ width: 125px; }
+
+.nav:hover{
+    cursor: pointer;
+    -webkit-text-stroke: 0.5px rgb(126, 39, 17);
+}
+
+.nav-home{
+    background: linear-gradient(to bottom right, lightblue, rgb(114, 184, 237));
+}
+
+.nav-home:hover{
+    background: linear-gradient(to bottom right, rgb(148, 204, 241), rgb(96, 143, 243));
+}
+
+.nav-portfolio{
+    width: 125px;
+    background: linear-gradient(to bottom right, rgb(253, 140, 54), rgb(255, 98, 46));
+}
+
+.nav-portfolio:hover{
+    background: linear-gradient(to bottom right, rgb(252, 114, 40), rgb(255, 64, 21));
+}
+
+.nav-study{
+    background: linear-gradient(to bottom right, gold, rgb(255, 174, 0));
+}
+
+.nav-study:hover{
+    background: linear-gradient(to bottom right, rgb(255, 204, 0), rgb(255, 119, 0));
+}
+
+.nav-note{
+    background: linear-gradient(to bottom right, burlywood, rgb(201, 139, 85));
+}
+
+.nav-note:hover{
+    background: linear-gradient(to bottom right, rgb(231, 178, 108), rgb(163, 103, 50));
+}
 
 .category-name{
     position: relative;
