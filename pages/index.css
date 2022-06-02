@@ -12,16 +12,38 @@ body::-webkit-scrollbar{
 }
 
 /* 언어 번환 버튼 */
+.lang-btn{
+    display: inline-block;
+    background: linear-gradient(to right, rgb(249, 205, 164), rgb(248, 233, 217), rgb(246, 176, 139));
+    border: 2px solid rgb(216, 139, 116);
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 150px;
+    height: 52px;
+    z-index: 2;
+    border-radius: 50px;
+}
+
 .national-flag{
     border-radius: 100px;
     width: 50px;
     position: fixed;
-    top: 30px;
-    border: coral 3px solid;
-    z-index: 2;
+    top: 22px;
+    border: rgb(216, 139, 116) 1.5px double;
 }
-.Korean-btn{ right: 150px; }
-.English-btn{ right: 50px; }
+
+.national-flag:hover{
+    cursor: pointer;
+}
+
+.Korean-btn{ right: 130px; }
+.English-btn{ right: 31px; }
+
+.disabled-lang{
+    filter: opacity(0.4) drop-shadow(0 0 0 snow);
+    transition: 0.5s;
+}
 
 /* 개인 정보란 */
 .my-info{
@@ -175,7 +197,7 @@ body::-webkit-scrollbar{
 }
 
 .nav-home:hover{
-    background: linear-gradient(to bottom right, rgb(148, 204, 241), rgb(96, 143, 243));
+    background: linear-gradient(to bottom right, rgb(148, 204, 241), rgb(93, 144, 252));
 }
 
 .nav-portfolio{
@@ -184,7 +206,7 @@ body::-webkit-scrollbar{
 }
 
 .nav-portfolio:hover{
-    background: linear-gradient(to bottom right, rgb(254, 119, 47), rgb(255, 64, 21));
+    background: linear-gradient(to bottom right, rgb(254, 140, 47), rgb(255, 64, 21));
 }
 
 .nav-study{
@@ -251,7 +273,7 @@ body::-webkit-scrollbar{
     width: 45.6%;
     height: 100%;
     padding: 0 2%;
-    border-bottom: rgb(164, 170, 171) 2px solid;
+    border-bottom: rgb(138, 145, 146) 2px solid;
 }
 .left-hand{
     background: linear-gradient(to right, snow, rgb(196, 196, 200), rgb(173, 173, 184),rgb(196, 196, 200));
