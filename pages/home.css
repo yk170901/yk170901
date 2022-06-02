@@ -1,7 +1,7 @@
 /* 반응형 */
-@media screen and (min-width:1012px) and (max-width:1824px){
+@media screen and (min-width:900px) and (max-width:1250px){
     .col{
-        width: 34%;
+        width: 45% !important;
     }
 }
 
@@ -25,11 +25,11 @@ body::-webkit-scrollbar{
 
 /* 개인 정보란 */
 .my-info{
-    background: linear-gradient(to right, rgb(157, 62, 15), rgb(126, 39, 17));
+    background: linear-gradient(to top left, rgb(162, 67, 12), rgb(144, 40, 14), rgb(126, 39, 17), rgb(114, 30, 9));
     width: 17%;
     display: inline-block;
     height: 100%;
-    border-right: dashed 2px gold;
+    border-right: dashed 1.5px rgb(235, 173, 0);
     border-radius: 30px 0 0 30px;;
 }
 
@@ -86,7 +86,7 @@ body::-webkit-scrollbar{
     background: linear-gradient(to bottom right, palegoldenrod 80%, rgb(229, 200, 132));
     box-shadow: 5px 5px 10px rgb(68, 1, 1);
     width: 75%;
-    margin: 4zz0px 0;
+    margin: 10% 0;
     border-radius: 2% 0 20% / 45% 0;
 }
 
@@ -98,7 +98,7 @@ body::-webkit-scrollbar{
     background: linear-gradient(to bottom, rgb(245, 243, 241), rgb(133, 117, 116));
     box-shadow: 2px 5px 10px rgb(68, 1, 1);
     width: 75%;
-    margin: 50px 0 30px 0;
+    margin: 10% 0;
     border-radius: 50px;
     border: rgb(221, 212, 208) groove 3px;
     border-style: ridge groove groove ridge;
@@ -143,13 +143,19 @@ body::-webkit-scrollbar{
     position: relative;
     top:-39px;
     margin-left: 5px;
+    display: inline-block;
+}
+
+.category:hover{
+    top:-47px;
+    transition: 0.5s;
 }
 
 .nav{
     width: 90px;
     z-index: 2;
     display: inline-block;
-    padding: 10px 10px 5px 15px;
+    padding: 10px 10px 15px 15px;
     border-radius: 30px 10px 0 0;
     margin-left: 5px;
 }
@@ -204,7 +210,7 @@ body::-webkit-scrollbar{
 
 /* 겉표지 */
 .outer-book{
-    background-color: rgb(126, 39, 17);
+    background: linear-gradient(to bottom right, rgb(126, 39, 17), rgb(154, 63, 6), rgb(115, 26, 10));
     width: 97%;
     margin: auto;
     margin-top: 2%;
@@ -232,21 +238,27 @@ body::-webkit-scrollbar{
 }
 
 /* 페이지 내 각 columns */
-.col{
-    display: inline-block;
-    width: 45.7%;
+.col-wrapper{
+    display: flex;
+    width: 100%;
     height: 100%;
     position: relative;
-    top: -40px;
+    top: -55px;
+}
+
+.col{
+    display: inline-block;
+    width: 45.6%;
+    height: 100%;
     padding: 0 2%;
+    border-bottom: rgb(164, 170, 171) 2px solid;
 }
 .left-hand{
-    top: -39px;
-    background: linear-gradient(to right, snow, rgb(196, 196, 200));
+    background: linear-gradient(to right, snow, rgb(196, 196, 200), rgb(173, 173, 184),rgb(196, 196, 200));
     border-radius: 5px 0 0 5px;
 }
 .right-hand{
-    background: linear-gradient(to left, snow, rgb(196, 196, 200));
-    border-left: 2px rgb(143, 146, 147) solid;
+    background: linear-gradient(to left, snow, rgb(196, 196, 200), rgb(171, 171, 181));
+    border-left: 1px rgb(134, 144, 153) solid;
     border-radius: 0 5px 5px 0;
 }

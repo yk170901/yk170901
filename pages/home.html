@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scaleable="yes">
+    <title>Ava Kim - HOME</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="body" onload="getHeight();">
+    <div class="btn lang-btn">
+        <img src="img/korean_flag.png" class="national-flag Korean-btn"/>
+        <img src="img/american_flag.png" class="national-flag English-btn"/>
+    </div>
+    
+
+    <div class="outer-book">
+        <aside class="my-info">
+            <div class="profile-pic">
+                <img src="img/seth.jpg"/>
+            </div>
+            <div>
+                <h2 class="profile-name">Yeseul Kim</h2>
+                <h2 class="profile-second-name">Ava</h2>
+            </div>
+            <section>
+                <div class="profile-desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                <div class="profile-email">yk170901@gmail.com</div>
+                <div class="profile-phone-number">010 5900 2777</div>
+            </section>
+            <div class="profile-svg">
+                <a href="mailto:yk170901@gmail.com"><img class="contact-svg" src="img/gmail.svg"></a>
+                <a href="https://github.com/yk170901" target="_blank"><img class="contact-svg github-svg" src="img/github.svg"></a>
+                <a href="" target="_blank" onclick="alert('sorry. I don&#8217;t have an instagram account yet')"><img class="contact-svg instagram-svg" src="img/instagram.svg"></a>
+            </div>
+        </aside>
+        <section class="inner-book">
+            <section class="inner-page">
+                <nav class="category">
+                    <div class="nav nav-home">
+                        <img class="nav-svg" src="img/home.svg">
+                        <span class="category-name">HOME</span>
+                    </div>
+                </nav>
+                <nav class="category">
+                    <div class="nav nav-portfolio">
+                        <img class="nav-svg" src="img/portfolio.svg">
+                        <span class="category-name">PORTFOLIO</span>
+                    </div>
+                </nav>
+                <nav class="category">
+                    <div class="nav nav-study">
+                        <img class="nav-svg" src="img/study.svg">
+                        <span class="category-name">STUDY</span>
+                    </div>
+                </nav>
+                <nav class="category">
+                    <div class="nav nav-note">
+                        <img class="nav-svg" src="img/note.svg">
+                        <span class="category-name">NOTE</span>
+                    </div>
+                </nav>
+                <article class="col-wrapper">
+                    <article class="left-hand col">
+                        <h1>I'm a --</h1>
+                        <span>Some interesting facts about me...</span>
+        
+                        <section>
+                            <h3>Education</h3>
+                        </section>
+        
+                        <section>
+                            <h3>Experience</h3>
+                        </section>
+                    </article>
+        
+                    <article class="right-hand col">
+                        <div class="post-it">
+                            <h3>About Me</h3>
+                            <span>Some interesting listings about me</span>
+                        </div>
+        
+                       <section>
+                           <h3>Major Skills</h3>
+                       </section>
+        
+                       <section>
+                           <h3>I've experienced...</h3>
+                       </section>
+                    </article>
+                </article>
+            </section>
+        </section>
+    </div>
+</body>
+<script>
+    function getHeight(){
+        document.querySelector("div.outer-book").style.height = window.innerHeight-(window.innerHeight*0.07)+"px";
+    }
+</script>
+</html>
