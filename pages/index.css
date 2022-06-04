@@ -5,10 +5,14 @@
     }
 }
 
+/* 폰트 */
+*{
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
 /* 배경화면 */
 .body{
     background: url(img/background.svg);
-    /* background-size: 1700px 1000px; */
 }
 
 /* 스크롤바 없애기 */
@@ -44,6 +48,7 @@ body::-webkit-scrollbar{
 }
 
 .Korean-btn{ right: 130px; }
+/* .Korean-btn:hover{ right: 31px; transition: 1s; } */
 .English-btn{ right: 31px; }
 
 .disabled-lang{
@@ -87,6 +92,7 @@ body::-webkit-scrollbar{
     padding: 3px;
     box-shadow: 5px 3px 2px rgb(68, 1, 1);
     color: white;
+    font-family: 'Malgun Gothic';
     -webkit-text-stroke: 1px rgb(26, 0, 0);
 }
 
@@ -102,6 +108,7 @@ body::-webkit-scrollbar{
     padding: 3px;
     box-shadow: 3px 3px 2px rgb(68, 1, 1);
     color: snow;
+    font-family: 'Malgun Gothic';
     -webkit-text-stroke: 0.7px rgb(155, 20, 2);
     width: 40%;
     font-size: 1.3em;
@@ -177,7 +184,7 @@ body::-webkit-scrollbar{
 
 .category:hover{
     top:-47px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .nav{
