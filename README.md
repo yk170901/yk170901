@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=YESEUL KIM&fontSize=80)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=YESEULKIM&fontSize=80)
 
 ______
 
